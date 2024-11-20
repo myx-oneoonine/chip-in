@@ -1,0 +1,18 @@
+name: chip-in
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: chip-in-db
+    restart: unless-stopped
+    network_mode: bridge
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+      POSTGRES_DB: "chip_in"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

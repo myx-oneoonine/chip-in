@@ -1,11 +1,11 @@
 import "./globals.css";
-import { classNames } from "@/utils/style";
+import { classNames } from "@/lib/utils/style";
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 
 export const metadata: Metadata = {
-  title: 'Equipment Explorer',
-  description: 'equipment explorer power by Hashpays.io',
+  title: 'Chip In: share your trip expenses',
+  description: 'let\'s make it easy to share expenses with friends',
 }
 
 
